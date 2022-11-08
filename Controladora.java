@@ -1,3 +1,3 @@
-public class Controladora {
+public class Controladora implements IContacto{
     
 }
