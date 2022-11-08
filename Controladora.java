@@ -14,18 +14,9 @@ Sección: 10
 
 Enum para determinar el modo Radio
 */
-public class Controladora implements IContacto{
+public class Controladora {
 
-    @Override
-    public String obtenerNombre() {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    @Override
-    public String obtenerNumero() {
-        // TODO Auto-generated method stub
-        return null;
-    }
+   
+    
     
 }
