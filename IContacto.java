@@ -1,20 +1,15 @@
-/*
-Profesor: Lynette García
-Auxiliar: Rodrigo Barrera y Gaby Contreras
-
-INTEGRANTE: 
-Sergio Alejandro Orellana Colindres (221122)
-Andre Marroquín Tarrot (22266)
-8/11/2022
-
-Laboratorio 4
-
-Curso: Programación Orientada a Objetos
-Sección: 10
-
-Interface de los contactos del teléfono
-*/
-
+/**
+ * IContacto
+ */
 public interface IContacto {
-    
+
+    /**
+     * @return El nombre del contacto.
+     */
+    String obtenerNombre();
+
+    /**
+     * @return El número de teléfono del contacto.
+     */
+    String obtenerNumero();
 }

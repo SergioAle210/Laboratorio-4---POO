@@ -1,19 +1,29 @@
-/*
-Profesor: Lynette García
-Auxiliar: Rodrigo Barrera y Gaby Contreras
+import java.time.Duration;
 
-INTEGRANTE: 
-Sergio Alejandro Orellana Colindres (221122)
-Andre Marroquín Tarrot (22266)
-8/11/2022
-
-Laboratorio 4
-
-Curso: Programación Orientada a Objetos
-Sección: 10
-
-Enum para determinar el modo Radio
-*/
+/**
+ * ICancion
+ */
 public interface ICancion {
-    
+    /**
+     * @return El nombre de la canción.
+     */
+    String obtenerNombre();
+
+    /**
+     * 
+     * @return La duración de la canción.
+     */
+    Duration obtenerDuracion();
+
+    /**
+     * 
+     * @return El género al que pertenece la canción.
+     */
+    String obtenerGenero();
+
+    /**
+     * 
+     * @return El autor de la canción.
+     */
+    String obtenerAutor();
 }
