@@ -65,6 +65,9 @@ public class Telefono implements ITelefono, IContacto {
 
     @Override
     public ArrayList<IContacto> obtenerContactos() {
+        contactos.add(new Contacto("Sergio Orellana", "5635-0874"));
+        contactos.add(new Contacto("Andre Marroquin", "8473-3982"));
+        contactos.add(new Contacto("Andre Jo", "8493-3483"));
         return contactos;
     }   
 }
