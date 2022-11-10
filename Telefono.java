@@ -18,7 +18,6 @@ Representa la clase teléfono
 */
 
 public class Telefono implements ITelefono {
-    private String n;
     private String Nombre;
     private int Numero;
     private String Dueno;
