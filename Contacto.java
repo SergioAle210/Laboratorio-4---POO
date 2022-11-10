@@ -15,7 +15,7 @@ Sección: 10
 Representa la clase Contacto
 */
 
-public class Contacto /* implements IContacto */ {
+public class Contacto implements IContacto /* implements IContacto */ {
     private String Nombre;
     private int Numero;
     
@@ -66,6 +66,18 @@ public class Contacto /* implements IContacto */ {
      */
     public void setNumero(int Numero) {
         this.Numero = Numero;
+    }
+
+    @Override
+    public String obtenerNombre() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public String obtenerNumero() {
+        // TODO Auto-generated method stub
+        return null;
     }
 
     
