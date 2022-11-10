@@ -19,7 +19,7 @@ Sección: 10
 Representa la clase teléfono
 */
 
-public class Telefono implements ITelefono, IContacto {
+public class Telefono implements ITelefono {
     private String Nombre;
     private String Numero;
     private String Dueño;
