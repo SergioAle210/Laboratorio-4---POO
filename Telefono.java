@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 
+import javax.swing.Icon;
+
 /*
 Profesor: Lynette García
 Auxiliar: Rodrigo Barrera y Gaby Contreras
@@ -17,17 +19,19 @@ Sección: 10
 Representa la clase teléfono
 */
 
-public class Telefono implements ITelefono {
+public class Telefono implements ITelefono, IContacto {
     private String Nombre;
-    private int Numero;
-    private String Dueno;
+    private String Numero;
+    private String Dueño;
     Contacto contacto = new Contacto();
+    ArrayList<IContacto> contactos;
+    
 
     public Telefono() {
         Nombre = "";
-        Numero = 0;
-        Dueno = "";
-        contacto = new Contacto();
+        Numero = "";
+        Dueño = "";
+        contactos = new ArrayList<IContacto>();
     }
 
     /**
@@ -35,40 +39,32 @@ public class Telefono implements ITelefono {
      * @param Nombre: Obtiene el Nombre
      * @param Numero: Obtiene el Numero
      * @param Dueno: Obtiene el Dueno
-     * @param contacto: Obtiene el contacto
      */
-    public Telefono(String Nombre, int Numero, String Dueno, Contacto contacto) {
+    public Telefono(String Nombre, String Numero, String Dueño, Contacto contacto) {
         this.Nombre = Nombre;
         this.Numero = Numero;
-        this.Dueno = Dueno;
-        this.contacto = contacto;
+        this.Dueño = Dueño;
     }
 
     @Override
     public String obtenerNombre() {
         // TODO Auto-generated method stub
-        return null;
+        return Nombre;
     }
 
     @Override
     public String obtenerNumero() {
         // TODO Auto-generated method stub
-        return null;
+        return Numero;
     }
 
-    @Override
+    
     public String obtenerDueño() {
-        // TODO Auto-generated method stub
-        return null;
+        return Dueño;
     }
 
     @Override
     public ArrayList<IContacto> obtenerContactos() {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    
-  
-
+        return contactos;
+    }   
 }
