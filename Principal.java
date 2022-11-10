@@ -18,6 +18,8 @@ Enum para determinar el modo Radio
 public class Principal{
     public static void main(String[] args) {
         Controladora control = new Controladora();
+        Reproduccion reproduccion = new Reproduccion();
+        System.out.println(reproduccion.obtenerPlaylists());
         
         
     }

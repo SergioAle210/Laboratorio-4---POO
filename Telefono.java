@@ -19,7 +19,7 @@ Sección: 10
 Representa la clase teléfono
 */
 
-public class Telefono implements ITelefono {
+public class Telefono extends Radio implements ITelefono{
     private String Nombre;
     private String Numero;
     private String Dueño;
@@ -69,5 +69,53 @@ public class Telefono implements ITelefono {
         contactos.add(new Contacto("Andre Marroquin", "8473-3982"));
         contactos.add(new Contacto("Andre Jo", "8493-3483"));
         return contactos;
+    }
+
+    @Override
+    public boolean conectarTelefono(ITelefono telefono) {
+        // TODO Auto-generated method stub
+        return false;
+    }
+
+    @Override
+    public void desconectarTelefono() {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void encender() {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void apagar() {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void aumentarVolumen() {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void disminuirVolumen() {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void cambiarModo(ModosRadio nuevoModo) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public ModosRadio obtenerModo() {
+        // TODO Auto-generated method stub
+        return null;
     }   
 }

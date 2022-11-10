@@ -18,17 +18,21 @@ Sección: 10
 Representa la clase reproduccion
 */
 
-public class Reproduccion  implements ICancion, IModoReproduccion {
+public class Reproduccion extends Radio implements ICancion {
     private String Nombre;
     private Duration Duracion;
     private String Genero;
     private String Autor;
+    ArrayList<ArrayList<ICancion>> cancions;
+    ArrayList<ICancion> cancions2;
     
 
     public Reproduccion() {
         Nombre = "";
-        //Duration Duracion = new Duration();
         Genero = "";
+        Duracion = Duration.ofMinutes(0);
+        cancions = new ArrayList<ArrayList<ICancion>>(cancions);
+        cancions2 = new ArrayList<ICancion>();
         Autor = "";
     }
 
@@ -41,8 +45,14 @@ public class Reproduccion  implements ICancion, IModoReproduccion {
 
     @Override
     public ArrayList<ArrayList<ICancion>> obtenerPlaylists() {
-        // TODO Auto-generated method stub
-        return null;
+        cancions2.add(new Reproduccion("Bones", Duration.ofMinutes(3), "Electronica", "Imagine Dragons"));
+        cancions2.add(new Reproduccion("Billie Jean", Duration.ofMinutes(5), "Pop", "Michael Jackson"));
+        cancions2.add(new Reproduccion("Fire to the Fuse", Duration.ofMinutes(4), "Electronica", "Watson Michael"));
+
+        cancions.add(cancions2);
+        
+        
+        return cancions;
     }
 
     @Override
