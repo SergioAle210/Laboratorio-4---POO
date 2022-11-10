@@ -36,38 +36,6 @@ public class Contacto implements IContacto /* implements IContacto */ {
     }
 
 
-    
-    /** 
-     * @return String
-     */
-    public String getNombre() {
-        return this.Nombre;
-    }
-
-    
-    /** 
-     * @param Nombre
-     */
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
-    }
-
-    
-    /** 
-     * @return int
-     */
-    public int getNumero() {
-        return this.Numero;
-    }
-
-    
-    /** 
-     * @param Numero
-     */
-    public void setNumero(int Numero) {
-        this.Numero = Numero;
-    }
-
     @Override
     public String obtenerNombre() {
         // TODO Auto-generated method stub
