@@ -18,7 +18,7 @@ Representa la clase teléfono
 */
 
 public class Telefono implements ITelefono {
-    private int 0;
+    
     private String Nombre;
     private int Numero;
     private String Dueno;
