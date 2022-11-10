@@ -14,21 +14,7 @@ public class Productividad {
         this.Pronostico = Pronostico;
     }
 
-    
-    /** 
-     * @return String
-     */
-    public String getPronostico() {
-        return this.Pronostico;
-    }
 
-    
-    /** 
-     * @param Pronostico
-     */
-    public void setPronostico(String Pronostico) {
-        this.Pronostico = Pronostico;
-    }
 
 
 }

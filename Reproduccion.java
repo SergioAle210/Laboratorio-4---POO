@@ -38,47 +38,6 @@ public class Reproduccion /**  implements ICancion, IModoReproduccion */ {
         this.Autor = Autor;
     }
 
-    public String getNombre() {
-        return this.Nombre;
-    }
-
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
-    }
-
-    public Duration getDuracion() {
-        return this.Duracion;
-    }
-
-    public void setDuracion(Duration Duracion) {
-        this.Duracion = Duracion;
-    }
-
-    public String getGenero() {
-        return this.Genero;
-    }
-
-    public void setGenero(String Genero) {
-        this.Genero = Genero;
-    }
-
-    public String getAutor() {
-        return this.Autor;
-    }
-
-    public void setAutor(String Autor) {
-        this.Autor = Autor;
-    } 
-
-    @Override
-    public String toString() {
-        return "{" +
-            " Nombre='" + getNombre() + "'" +
-            ", Duracion='" + getDuracion() + "'" +
-            ", Genero='" + getGenero() + "'" +
-            ", Autor='" + getAutor() + "'" +
-            "}";
-    }
 
 
 }
