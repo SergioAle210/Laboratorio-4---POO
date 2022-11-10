@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /*
 Profesor: Lynette García
 Auxiliar: Rodrigo Barrera y Gaby Contreras
@@ -15,7 +17,7 @@ Sección: 10
 Representa la clase teléfono
 */
 
-public class Telefono /*implements ITelefono */{
+public class Telefono implements ITelefono {
     private String Nombre;
     private int Numero;
     private String Dueno;
@@ -42,68 +44,31 @@ public class Telefono /*implements ITelefono */{
         this.contacto = contacto;
     }
 
-    
-    /** 
-     * @return String
-     */
-    public String getNombre() {
-        return this.Nombre;
+    @Override
+    public String obtenerNombre() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public String obtenerNumero() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public String obtenerDueño() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public ArrayList<IContacto> obtenerContactos() {
+        // TODO Auto-generated method stub
+        return null;
     }
 
     
-    /** 
-     * @param Nombre
-     */
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
-    }
-
-    
-    /** 
-     * @return int
-     */
-    public int getNumero() {
-        return this.Numero;
-    }
-
-    
-    /** 
-     * @param Numero
-     */
-    public void setNumero(int Numero) {
-        this.Numero = Numero;
-    }
-
-    
-    /** 
-     * @return String
-     */
-    public String getDueno() {
-        return this.Dueno;
-    }
-
-    
-    /** 
-     * @param Dueno
-     */
-    public void setDueno(String Dueno) {
-        this.Dueno = Dueno;
-    }
-
-    
-    /** 
-     * @return Contacto
-     */
-    public Contacto getContacto() {
-        return this.contacto;
-    }
-
-    
-    /** 
-     * @param contacto
-     */
-    public void setContacto(Contacto contacto) {
-        this.contacto = contacto;
-    }
+  
 
 }
