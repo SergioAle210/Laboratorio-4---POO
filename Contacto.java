@@ -17,12 +17,12 @@ Representa la clase Contacto
 
 public class Contacto implements IContacto /* implements IContacto */ {
     private String Nombre;
-    private int Numero;
+    private String Numero;
     
 
     public Contacto() {
         Nombre = "";
-        Numero = 0;
+        Numero = "";
     }
 
     /**
@@ -30,7 +30,7 @@ public class Contacto implements IContacto /* implements IContacto */ {
      * @param Nombre: Obtiene el nombre del contacto
      * @param Numero: Obtiene el numero del contacto
      */
-    public Contacto(String Nombre, int Numero) {
+    public Contacto(String Nombre, String Numero) {
         this.Nombre = Nombre;
         this.Numero = Numero;
     }
@@ -39,13 +39,13 @@ public class Contacto implements IContacto /* implements IContacto */ {
     @Override
     public String obtenerNombre() {
         // TODO Auto-generated method stub
-        return null;
+        return Nombre;
     }
 
     @Override
     public String obtenerNumero() {
         // TODO Auto-generated method stub
-        return null;
+        return Numero;
     }
 
     
