@@ -16,7 +16,24 @@ Enum para determinar el modo Radio
 */
 public class Controladora {
 
-   
-    
+    private Reproduccion reproduccion;
+    private Productividad productividad;
+    private Telefono telefono;
+    private Radio radio;
+
+    public Controladora(){
+        reproduccion = new Reproduccion();
+        productividad = new Productividad();
+        telefono = new Telefono();
+        radio = new Radio();
+    }
+
+    public void Encender_apagar(){
+
+    }
+
+    public void Aumentar_Disminuir_Volumen(){
+        
+    }
     
 }
