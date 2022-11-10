@@ -30,11 +30,21 @@ public class Reproduccion extends Radio implements ICancion {
     public Reproduccion() {
         Nombre = "";
         Genero = "";
+        Autor = "";
         Duracion = Duration.ofMinutes(0);
         cancions = new ArrayList<ArrayList<ICancion>>(cancions);
         cancions2 = new ArrayList<ICancion>();
-        Autor = "";
     }
+    public Reproduccion(String Nombre, Duration Duracion, String Genero, String Autor, ArrayList<ArrayList<ICancion>> cancions, ArrayList<ICancion> cancions2) {
+        this.Nombre = Nombre;
+        this.Duracion = Duracion;
+        this.Genero = Genero;
+        this.Autor = Autor;
+        this.cancions = cancions;
+        this.cancions2 = cancions2;
+    }
+        
+    
 
     public Reproduccion(String Nombre, Duration Duracion, String Genero, String Autor) {
         this.Nombre = Nombre;
