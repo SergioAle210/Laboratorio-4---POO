@@ -18,6 +18,11 @@ public interface IModoRadio {
     void cambiarA_FM();
 
     /**
+     * @return Si se encuentra en FM o AM.
+     */
+    Bandas obtenerBanda();
+
+    /**
      * Cambia de emisora a una superior por DELTA_EMISORA.
      */
     void subirEmisora();
